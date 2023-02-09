@@ -6,8 +6,7 @@ def start_validation( user_cpf):
 
     #remove a pontuação caso tenha
     user_cpf = str(user_cpf)
-    user_cpf = user_cpf.replace(".", "")
-    user_cpf = user_cpf.replace("-", "")
+    user_cpf = user_cpf.replace(".", "").replace("-", "")
 
     #verifica se o usuario digitou um cpf com 11 numeros
     if len(user_cpf) !=11:
